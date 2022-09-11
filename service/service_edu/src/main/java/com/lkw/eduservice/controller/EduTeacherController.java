@@ -18,6 +18,7 @@ import java.util.List;
 
 @Api(value = "讲师管理功能")//注解还有其他输出功能,暂时不写
 @RestController
+@CrossOrigin
 @RequestMapping("/eduservice/teacher")
 public class EduTeacherController {
     //注入service
