@@ -18,7 +18,7 @@ import java.util.List;
 
 @Api(value = "讲师管理功能")//注解还有其他输出功能,暂时不写
 @RestController
-@CrossOrigin
+@CrossOrigin//解决跨域问题
 @RequestMapping("/eduservice/teacher")
 public class EduTeacherController {
     //注入service
@@ -52,6 +52,7 @@ public class EduTeacherController {
     @ApiOperation(value = "教师列表分页" )
     @GetMapping("pageTeacher/{current}/{limit}")
     public R pageListTeacher(@PathVariable long current ,@PathVariable long limit){
+/*
 
         //模拟的自定义异常
         try {
@@ -59,6 +60,7 @@ public class EduTeacherController {
         } catch (Exception e) {
             throw new GuliException(20001,"执行了自定义异常");
         }
+*/
 
 
 
