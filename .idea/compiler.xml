@@ -8,9 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service_edu" />
-        <module name="service_oss" />
         <module name="common_utils" />
         <module name="service_base" />
+      </profile>
+      <profile name="Annotation profile for guli_parent" enabled="true">
+        <sourceOutputDir name="../../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service_oss" />
       </profile>
     </annotationProcessing>
   </component>
