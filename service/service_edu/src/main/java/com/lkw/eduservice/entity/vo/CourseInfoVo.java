@@ -2,7 +2,6 @@ package com.lkw.eduservice.entity.vo;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
 import java.math.BigDecimal;
 
 @Data

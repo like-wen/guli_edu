@@ -2,6 +2,7 @@ package com.lkw.eduservice.mapper;
 
 import com.lkw.eduservice.entity.EduCourse;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.lkw.eduservice.entity.vo.CoursePublishVo;
 
 /**
 * @author 李可文
@@ -10,7 +11,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity com.lkw.eduservice.entity.EduCourse
 */
 public interface EduCourseMapper extends BaseMapper<EduCourse> {
-
+    public CoursePublishVo getPublishCourseInfo(String courseId);
 }
 
 

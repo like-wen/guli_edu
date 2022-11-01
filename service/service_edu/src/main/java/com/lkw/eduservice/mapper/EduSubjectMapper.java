@@ -10,7 +10,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity com.lkw.serviceedu.entity.EduSubject
 */
 public interface EduSubjectMapper extends BaseMapper<EduSubject> {
-
 }
 
 
