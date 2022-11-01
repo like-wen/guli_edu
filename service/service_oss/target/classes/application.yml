@@ -1,0 +1,22 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: service-oss
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+
+#阿里云服务器
+#aliyun
+#  oss
+#    file
+#      endpoint: oss-cn-chengdu.aliyuncs.com
+#      keyid: LTAI5tS6amFwgFinXXU9KMst
+#      keysecret: 9lJ2OsiEvYBeIXLQErVMNQMhDQQKgA
+#      bucketname: lkw-edu
+
