@@ -5,9 +5,11 @@ import com.lkw.eduservice.entity.EduCourse;
 import com.lkw.eduservice.entity.EduCourseDescription;
 import com.lkw.eduservice.entity.vo.CourseInfoVo;
 import com.lkw.eduservice.entity.vo.CoursePublishVo;
+import com.lkw.eduservice.service.EduChapterService;
 import com.lkw.eduservice.service.EduCourseDescriptionService;
 import com.lkw.eduservice.service.EduCourseService;
 import com.lkw.eduservice.mapper.EduCourseMapper;
+import com.lkw.eduservice.service.EduVideoService;
 import com.lkw.servicebase.exceptionhandler.GuliException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,12 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     implements EduCourseService{
 
 
+    //注入小节service
+    @Autowired
+    private EduVideoService videoService;
+
+    @Autowired
+    private EduChapterService chapterService;
 
     @Autowired
     private EduCourseDescriptionService courseDescriptionService;
@@ -86,6 +94,25 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     public CoursePublishVo publishCourseInfo(String id) {
         //调用mapper
         return baseMapper.getPublishCourseInfo(id);
+    }
+
+    @Override
+    public void removeCourse(String courseId) {
+        //根据课程id删除小节
+        videoService.removeVideoByCourseId(courseId);
+
+        //删除章节
+        chapterService.removeChapterByCourseId(courseId);
+
+        //删除章节描述
+        courseDescriptionService.removeById(courseId);
+
+        //删除课程
+        int result = baseMapper.deleteById(courseId);
+        if(result==0){
+            //删除失败
+            throw new GuliException(20001,"删除失败");
+        }
     }
 }
 

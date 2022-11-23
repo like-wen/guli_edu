@@ -37,8 +37,8 @@
         <aliyun-java-sdk-core.version>4.3.3</aliyun-java-sdk-core.version>
         <aliyun-sdk-oss.version>3.1.0</aliyun-sdk-oss.version>
         <aliyun-java-sdk-vod.version>2.15.2</aliyun-java-sdk-vod.version>
-        <aliyun-java-vod-upload.version>1.4.11</aliyun-java-vod-upload.version>
-        <aliyun-sdk-vod-upload.version>1.4.11</aliyun-sdk-vod-upload.version>
+<!--        <aliyun-java-vod-upload.version>1.4.11</aliyun-java-vod-upload.version>-->
+<!--        <aliyun-sdk-vod-upload.version>1.4.11</aliyun-sdk-vod-upload.version>-->
         <fastjson.version>1.2.28</fastjson.version>
         <gson.version>2.8.2</gson.version>
         <json.version>20170516</json.version>
@@ -86,19 +86,33 @@
                 <artifactId>springfox-boot-starter</artifactId>
                 <version>${swagger3.version}</version>
             </dependency>
-<!--
-            &lt;!&ndash;swagger&ndash;&gt;
+            <!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger.version}</version>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>4.6.0</version>
             </dependency>
-            &lt;!&ndash;swagger ui&ndash;&gt;
+            <!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-vod -->
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>-->
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-vod</artifactId>
+                <version>2.15.2</version>
+            </dependency>
+
+
+            <!--
+                        &lt;!&ndash;swagger&ndash;&gt;
+                        <dependency>
+                            <groupId>io.springfox</groupId>
+                            <artifactId>springfox-swagger2</artifactId>
+                            <version>${swagger.version}</version>
+                        </dependency>
+                        &lt;!&ndash;swagger ui&ndash;&gt;
+                        <dependency>
+                            <groupId>io.springfox</groupId>
+                            <artifactId>springfox-swagger-ui</artifactId>
+                            <version>${swagger.version}</version>
+                        </dependency>-->
 <!--
             &lt;!&ndash;aliyunOSS&ndash;&gt;
             <dependency>
@@ -177,16 +191,21 @@
                 <artifactId>aliyun-java-sdk-vod</artifactId>
                 <version>${aliyun-java-sdk-vod.version}</version>
             </dependency>
-            <!--<dependency>
-                <groupId>com.aliyun</groupId>
-                <artifactId>aliyun-java-vod-upload</artifactId>
-                <version>${aliyun-java-vod-upload.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.aliyun</groupId>
-                <artifactId>aliyun-sdk-vod-upload</artifactId>
-                <version>${aliyun-sdk-vod-upload.version}</version>
-            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>com.aliyun</groupId>-->
+<!--                <artifactId>aliyun-java-vod-upload</artifactId>-->
+<!--                <version>${aliyun-java-vod-upload.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.aliyun</groupId>-->
+<!--                <artifactId>aliyun-sdk-vod-upload</artifactId>-->
+<!--                <version>${aliyun-sdk-vod-upload.version}</version>-->
+<!--            </dependency>-->
+
+
+
+
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
@@ -223,7 +242,19 @@
             </plugin>
         </plugins>
     </build>
-
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <name>Sonatype Nexus Staging</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
 
 
