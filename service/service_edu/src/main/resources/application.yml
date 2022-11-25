@@ -13,11 +13,19 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.199.100:8848 #服务地址
+
 
 mybatis-plus:
   global-config:
       db-config:
         id-type: ASSIGN_UUID
+
+
+
 #    configuration:
 #      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 #
@@ -25,3 +33,7 @@ mybatis-plus:
 #logging:
 #  level:
 #    root: warn
+feign:
+  hystrix:
+    enabled: true
+

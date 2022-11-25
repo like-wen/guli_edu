@@ -14,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 @CrossOrigin
 @RestController
 @RequestMapping("/eduvod/video")
@@ -26,6 +28,8 @@ public class VodController {
     private VodService vodService;
 
 
+
+
     //http://localhost:8003/eduvod/video/uploadAliyunVideo
     @PostMapping("uploadAliyunVideo")
     public R uploadAliyunVideo(@ApiParam(value = "视频", required = true)@RequestPart("file")MultipartFile file){
@@ -35,7 +39,7 @@ public class VodController {
     }
 
 
-    @DeleteMapping("removeAliyunVideo")
+    @DeleteMapping("{id}")
     public R removeAliyunVideo(@PathVariable String id){
         try{
             DefaultAcsClient defaultAcsClient = InitVodCilent.initVodClient(ConstantVodUtils.ACCESS_KEY_ID,ConstantVodUtils.ACCESS_KEY_SECRET);
@@ -51,6 +55,16 @@ public class VodController {
             throw new GuliException(20001,"删除视频失败");
         }
 
+    }
+
+
+
+    //删除多个视频的方法
+    @DeleteMapping("delete-batch")
+    public R deleteBatch(@RequestParam("videoIdList") List videoIdList) {
+
+        vodService.removeMoreAlyVideo(videoIdList);
+        return R.ok();
     }
 
 
