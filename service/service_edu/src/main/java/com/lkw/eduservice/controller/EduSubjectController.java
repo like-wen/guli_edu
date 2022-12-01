@@ -1,8 +1,7 @@
 package com.lkw.eduservice.controller;
 
-import com.lkw.commonutils.R;
+import com.lkw.cmsservice.commonutils.R;
 import com.lkw.eduservice.entity.subject.OneSubject;
-import com.lkw.eduservice.mapper.EduSubjectMapper;
 import com.lkw.eduservice.service.EduSubjectService;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;

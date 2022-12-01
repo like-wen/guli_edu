@@ -2,10 +2,10 @@ package com.lkw.eduservice.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lkw.eduservice.client.VodClient;
 import com.lkw.eduservice.entity.EduVideo;
-import com.lkw.eduservice.service.EduVideoService;
 import com.lkw.eduservice.mapper.EduVideoMapper;
+import com.lkw.eduservice.service.EduVideoService;
+import com.lkw.eduservice.client.VodClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 */
 @Service
 public class EduVideoServiceImpl extends ServiceImpl<EduVideoMapper, EduVideo>
-    implements EduVideoService{
+    implements EduVideoService {
 
     //注入
     @Autowired

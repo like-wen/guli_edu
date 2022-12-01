@@ -1,6 +1,6 @@
 package com.lkw.eduservice.controller;
 
-import com.lkw.commonutils.R;
+import com.lkw.cmsservice.commonutils.R;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

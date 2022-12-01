@@ -1,11 +1,8 @@
 package com.lkw.eduservice.service;
 
-        import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
         import com.lkw.eduservice.entity.EduChapter;
         import com.baomidou.mybatisplus.extension.service.IService;
-        import com.lkw.eduservice.entity.EduVideo;
         import com.lkw.eduservice.entity.chapter.ChapterVo;
-        import com.lkw.servicebase.exceptionhandler.GuliException;
 
         import java.util.List;
 

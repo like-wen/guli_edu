@@ -1,6 +1,6 @@
 package com.lkw.eduservice.controller;
 
-import com.lkw.commonutils.R;
+import com.lkw.cmsservice.commonutils.R;
 import com.lkw.eduservice.entity.EduChapter;
 import com.lkw.eduservice.entity.chapter.ChapterVo;
 import com.lkw.eduservice.service.EduChapterService;

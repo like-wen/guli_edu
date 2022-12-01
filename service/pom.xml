@@ -16,6 +16,9 @@
         <module>service_edu</module>
         <module>service_oss</module>
         <module>service_vod</module>
+        <module>service_cms</module>
+        <module>service_acl</module>
+        <module>service_msm</module>
     </modules>
 
     <dependencies>

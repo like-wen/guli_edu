@@ -1,6 +1,6 @@
 package com.lkw.oss.controller;
 
-import com.lkw.commonutils.R;
+import com.lkw.cmsservice.commonutils.R;
 import com.lkw.oss.service.OssService;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;

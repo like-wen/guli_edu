@@ -1,6 +1,6 @@
 package com.lkw.eduservice.client.impl;
 
-import com.lkw.commonutils.R;
+import com.lkw.cmsservice.commonutils.R;
 import com.lkw.eduservice.client.VodClient;
 import org.springframework.stereotype.Component;
 

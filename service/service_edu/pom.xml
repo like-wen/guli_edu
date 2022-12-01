@@ -8,7 +8,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.lkw</groupId>
     <artifactId>service_edu</artifactId>
     <dependencies>
@@ -23,8 +22,6 @@
             <artifactId>easyexcel </artifactId>
             <version>2.1.1</version>
         </dependency>
-
-
 
     </dependencies>
 

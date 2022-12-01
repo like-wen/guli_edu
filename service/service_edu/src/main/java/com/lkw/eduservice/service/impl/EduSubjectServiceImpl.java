@@ -3,12 +3,12 @@ package com.lkw.eduservice.service.impl;
 import com.alibaba.excel.EasyExcel;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lkw.eduservice.service.EduSubjectService;
 import com.lkw.eduservice.entity.EduSubject;
 import com.lkw.eduservice.entity.excel.SubjectData;
 import com.lkw.eduservice.entity.subject.OneSubject;
 import com.lkw.eduservice.entity.subject.TwoSubject;
 import com.lkw.eduservice.listener.SubjectExcelListener;
-import com.lkw.eduservice.service.EduSubjectService;
 import com.lkw.eduservice.mapper.EduSubjectMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
@@ -25,7 +25,7 @@ import java.util.List;
 */
 @Service
 public class EduSubjectServiceImpl extends ServiceImpl<EduSubjectMapper, EduSubject>
-    implements EduSubjectService{
+    implements EduSubjectService {
 
 
     @Override

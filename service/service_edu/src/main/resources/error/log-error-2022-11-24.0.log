@@ -15,7 +15,7 @@ Action:
 Update your application's configuration
 
 2022-11-24 22:25:30.071 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.lkw.eduservice.client.VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
@@ -35,8 +35,8 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.lkw.eduservice.EduApplication.main(EduApplication.java:17)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.lkw.eduservice.client.VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
+	at EduApplication.main(EduApplication.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1818)
@@ -67,7 +67,7 @@ Caused by: java.lang.IllegalStateException: Could not resolve element type of It
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
 	... 30 common frames omitted
 2022-11-24 22:27:12.436 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.lkw.eduservice.client.VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
@@ -87,8 +87,8 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.lkw.eduservice.EduApplication.main(EduApplication.java:17)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.lkw.eduservice.client.VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
+	at EduApplication.main(EduApplication.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1818)
@@ -119,7 +119,7 @@ Caused by: java.lang.IllegalStateException: Could not resolve element type of It
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:171)
 	... 30 common frames omitted
 2022-11-24 22:29:43.328 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.lkw.eduservice.client.VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'eduVideoController': Unsatisfied dependency expressed through field 'vodClient'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
@@ -139,8 +139,8 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.lkw.eduservice.EduApplication.main(EduApplication.java:17)
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.lkw.eduservice.client.VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
+	at EduApplication.main(EduApplication.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'VodClient': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Could not resolve element type of Iterable type @org.springframework.web.bind.annotation.RequestParam java.util.List<?>. Not declared?
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:178)
 	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1818)

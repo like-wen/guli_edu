@@ -3,13 +3,13 @@ package com.lkw.eduservice.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lkw.eduservice.entity.EduCourse;
 import com.lkw.eduservice.entity.EduCourseDescription;
+import com.lkw.eduservice.mapper.EduCourseMapper;
+import com.lkw.eduservice.service.EduCourseDescriptionService;
+import com.lkw.eduservice.service.EduVideoService;
 import com.lkw.eduservice.entity.vo.CourseInfoVo;
 import com.lkw.eduservice.entity.vo.CoursePublishVo;
 import com.lkw.eduservice.service.EduChapterService;
-import com.lkw.eduservice.service.EduCourseDescriptionService;
 import com.lkw.eduservice.service.EduCourseService;
-import com.lkw.eduservice.mapper.EduCourseMapper;
-import com.lkw.eduservice.service.EduVideoService;
 import com.lkw.servicebase.exceptionhandler.GuliException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,7 +64,7 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
     public CourseInfoVo getCourseInfo(String courseId) {
         EduCourse eduCourse = baseMapper.selectById(courseId);
         CourseInfoVo courseInfoVo = new CourseInfoVo();
-        BeanUtils.copyProperties(eduCourse,courseInfoVo);
+        BeanUtils.copyProperties(eduCourse,courseInfoVo);//eduCourse 转到courseInfoVo
         //查询描述表
         EduCourseDescription courseDescription = courseDescriptionService.getById(courseId);
         courseInfoVo.setDescription(courseDescription.getDescription());

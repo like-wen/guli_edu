@@ -2,11 +2,10 @@ package com.lkw.eduservice.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.lkw.commonutils.R;
+import com.lkw.cmsservice.commonutils.R;
 import com.lkw.eduservice.entity.EduTeacher;
 import com.lkw.eduservice.entity.vo.TeacherQuery;
 import com.lkw.eduservice.service.EduTeacherService;
-import com.lkw.servicebase.exceptionhandler.GuliException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

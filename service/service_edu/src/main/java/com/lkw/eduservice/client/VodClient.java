@@ -1,8 +1,8 @@
 package com.lkw.eduservice.client;
 
 
-import com.lkw.commonutils.R;
 import com.lkw.eduservice.client.impl.VodClientImpl;
+import com.lkw.cmsservice.commonutils.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.DeleteMapping;

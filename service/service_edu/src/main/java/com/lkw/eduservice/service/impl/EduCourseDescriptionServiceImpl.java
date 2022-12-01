@@ -2,8 +2,8 @@ package com.lkw.eduservice.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lkw.eduservice.entity.EduCourseDescription;
-import com.lkw.eduservice.service.EduCourseDescriptionService;
 import com.lkw.eduservice.mapper.EduCourseDescriptionMapper;
+import com.lkw.eduservice.service.EduCourseDescriptionService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 */
 @Service
 public class EduCourseDescriptionServiceImpl extends ServiceImpl<EduCourseDescriptionMapper, EduCourseDescription>
-    implements EduCourseDescriptionService{
+    implements EduCourseDescriptionService {
 
 }
 

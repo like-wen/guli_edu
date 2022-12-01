@@ -7,13 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service_edu" />
         <module name="service_oss" />
+        <module name="service_acl" />
         <module name="common_utils" />
         <module name="service_vod" />
         <module name="service_base" />
+        <module name="service_edu" />
+        <module name="service_msm" />
+        <module name="service_cms" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="service_edu (1)" target="1.8" />
+      <module name="service_edu (2)" target="1.8" />
+      <module name="service_msm (1) (com.lkw)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -21,8 +29,13 @@
       <module name="common_utils" options="-parameters" />
       <module name="guli_parent" options="-parameters" />
       <module name="service" options="-parameters" />
+      <module name="service_acl" options="-parameters" />
       <module name="service_base" options="-parameters" />
+      <module name="service_cms" options="-parameters" />
       <module name="service_edu" options="-parameters" />
+      <module name="service_edu (2)" options="-parameters" />
+      <module name="service_msm" options="-parameters" />
+      <module name="service_msm (1) (com.lkw)" options="-parameters" />
       <module name="service_oss" options="-parameters" />
       <module name="service_vod" options="-parameters" />
     </option>

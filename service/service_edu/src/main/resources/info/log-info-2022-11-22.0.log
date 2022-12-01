@@ -1,5 +1,5 @@
-2022-11-22 20:00:20.320 [main] INFO  com.lkw.eduservice.EduApplication - Starting EduApplication on LAPTOP-D7QI6LTI with PID 22936 (D:\work\javacode\guli_parent\service\service_edu\target\classes started by 李可文 in D:\work\javacode\guli_parent)
-2022-11-22 20:00:20.322 [main] INFO  com.lkw.eduservice.EduApplication - The following profiles are active: dev
+2022-11-22 20:00:20.320 [main] INFO  EduApplication - Starting EduApplication on LAPTOP-D7QI6LTI with PID 22936 (D:\work\javacode\guli_parent\service\service_edu\target\classes started by 李可文 in D:\work\javacode\guli_parent)
+2022-11-22 20:00:20.322 [main] INFO  EduApplication - The following profiles are active: dev
 2022-11-22 20:00:21.253 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2022-11-22 20:00:21.255 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2022-11-22 20:00:21.282 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
@@ -13,20 +13,20 @@
 2022-11-22 20:00:22.913 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
 2022-11-22 20:00:23.545 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
 2022-11-22 20:00:23.567 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
-2022-11-22 20:00:23.569 [main] INFO  com.lkw.eduservice.EduApplication - Started EduApplication in 3.653 seconds (JVM running for 4.863)
+2022-11-22 20:00:23.569 [main] INFO  EduApplication - Started EduApplication in 3.653 seconds (JVM running for 4.863)
 2022-11-22 20:04:27.769 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-11-22 20:04:27.769 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2022-11-22 20:04:27.775 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
 2022-11-22 20:08:17.880 [http-nio-8001-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2022-11-22 20:08:18.448 [http-nio-8001-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2022-11-22 20:08:40.543 [http-nio-8001-exec-3] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 20:08:46.648 [http-nio-8001-exec-7] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 20:24:32.220 [http-nio-8001-exec-2] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 20:24:36.603 [http-nio-8001-exec-5] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 20:24:54.200 [http-nio-8001-exec-8] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 21:15:47.528 [http-nio-8001-exec-2] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 22:25:00.832 [http-nio-8001-exec-6] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 22:31:48.442 [http-nio-8001-exec-9] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 22:31:52.985 [http-nio-8001-exec-2] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 22:32:16.973 [http-nio-8001-exec-4] INFO  com.lkw.eduservice.controller.EduChapterController - test
-2022-11-22 23:08:35.685 [http-nio-8001-exec-6] INFO  com.lkw.eduservice.controller.EduChapterController - test
+2022-11-22 20:08:40.543 [http-nio-8001-exec-3] INFO  EduChapterController - test
+2022-11-22 20:08:46.648 [http-nio-8001-exec-7] INFO  EduChapterController - test
+2022-11-22 20:24:32.220 [http-nio-8001-exec-2] INFO  EduChapterController - test
+2022-11-22 20:24:36.603 [http-nio-8001-exec-5] INFO  EduChapterController - test
+2022-11-22 20:24:54.200 [http-nio-8001-exec-8] INFO  EduChapterController - test
+2022-11-22 21:15:47.528 [http-nio-8001-exec-2] INFO  EduChapterController - test
+2022-11-22 22:25:00.832 [http-nio-8001-exec-6] INFO  EduChapterController - test
+2022-11-22 22:31:48.442 [http-nio-8001-exec-9] INFO  EduChapterController - test
+2022-11-22 22:31:52.985 [http-nio-8001-exec-2] INFO  EduChapterController - test
+2022-11-22 22:32:16.973 [http-nio-8001-exec-4] INFO  EduChapterController - test
+2022-11-22 23:08:35.685 [http-nio-8001-exec-6] INFO  EduChapterController - test

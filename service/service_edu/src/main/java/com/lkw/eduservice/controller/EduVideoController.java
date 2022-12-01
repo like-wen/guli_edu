@@ -1,6 +1,6 @@
 package com.lkw.eduservice.controller;
 
-import com.lkw.commonutils.R;
+import com.lkw.cmsservice.commonutils.R;
 import com.lkw.eduservice.client.VodClient;
 import com.lkw.eduservice.entity.EduVideo;
 import com.lkw.eduservice.service.EduVideoService;
