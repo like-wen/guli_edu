@@ -8,10 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(basePackages = {"com.lkw.*"})
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-public class ServiceMsmApplication {
+public class MsmApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceMsmApplication.class, args);
+        SpringApplication.run(MsmApplication.class, args);
     }
 
 }
